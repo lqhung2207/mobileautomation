@@ -1,4 +1,4 @@
-package src.Practice;
+package src.practice;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileBy;
