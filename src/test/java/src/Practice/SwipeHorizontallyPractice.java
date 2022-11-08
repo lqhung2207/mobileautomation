@@ -70,6 +70,7 @@ public class SwipeHorizontallyPractice {
                     countSwipe++;
                     System.out.println("Swiped " + countSwipe + " times!");
                 }
+                // End loop when swipe 5 times
                 if (countSwipe > 5){
                     System.out.println("Can't find");
                     break;
