@@ -3,7 +3,9 @@ package src.api_learning;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
+import io.appium.java_client.internal.CapabilityHelpers;
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.OutputType;
 import src.driver.DriverFactory;
 import src.driver.Platform;
@@ -35,6 +37,11 @@ public class TakingScreenShot {
             File base64SLoginBtnData = loginBtnElem.getScreenshotAs(OutputType.FILE);
             String loginFormBtnLocation = System.getProperty("user.dir").concat("/screenshots").concat("LoginBtnScreen.png");
             FileUtils.copyFile(base64SLoginBtnData, new File(loginFormBtnLocation));
+
+            // Detect platform
+            Capabilities caps = appiumDriver.getCapabilities();
+            String platform = CapabilityHelpers.getCapability(caps, "platform", String.class);
+            System.out.println("Current Platform: " + platform);
 
 
         } catch (Exception e) {
