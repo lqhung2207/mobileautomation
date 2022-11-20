@@ -3,7 +3,9 @@
 <suite name="Regression">
     <test name="Authentication">
         <classes>
+<!--            <class name="src.tests.testng.TestNGHooksTest"></class>-->
             <class name="src.tests.authen.LoginTest"></class>
+<!--            <class name="src.tests.testng.TestNGHooks2Test"></class>-->
         </classes>
     </test>
 </suite>
