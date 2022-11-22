@@ -6,4 +6,5 @@ public interface MobileCapabilityEx extends MobileCapabilityType {
     String PLATFORM_NAME = "PlatformName";
     String APP_PACKAGE = "appPackage";
     String APP_ACTIVITY = "appActivity";
+    String SYSTEM_PORT ="systemPort";
 }

@@ -3,6 +3,7 @@ package src.models.components.login;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 
 public class LoginFormComponentMod03 {
@@ -18,7 +19,6 @@ public class LoginFormComponentMod03 {
     public LoginFormComponentMod03(AppiumDriver<MobileElement> appiumDriver) {
         this.appiumDriver = appiumDriver;
     }
-
     public LoginFormComponentMod03 inputUsername(String username){
         MobileElement usernameElem = appiumDriver.findElement(usernameSelect);
         usernameElem.clear();
